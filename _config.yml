@@ -1,9 +1,9 @@
 title: "Robot Learning Notes"
 subtitle: "Robotics / Robot Learning Engineer Notebook"
 description: "Learning notes, paper notes, skills, and project retrospectives for robot learning."
-url: "https://<username>.github.io"
+url: "https://jerryzyc.github.io"
 baseurl: ""
-repository: "<username>/<username>.github.io"
+repository: "JerryZyc/JerryZyc.github.io"
 timezone: "Asia/Shanghai"
 
 remote_theme: "mmistakes/minimal-mistakes"

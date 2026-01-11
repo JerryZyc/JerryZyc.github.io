@@ -1,6 +1,6 @@
 ---
 title: "PPO Tricks for Stable Training"
-date: 2026-01-11
+date: 2024-11-01
 categories: [learning]
 tags: [rl, ppo, policy, stability]
 ---

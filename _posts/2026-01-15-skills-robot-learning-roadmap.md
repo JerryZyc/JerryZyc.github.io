@@ -1,6 +1,6 @@
 ---
 title: "Robot Learning Skill Tree and Roadmap"
-date: 2026-01-15
+date: 2024-11-05
 categories: [skills]
 tags: [skills, roadmap, robot-learning]
 ---

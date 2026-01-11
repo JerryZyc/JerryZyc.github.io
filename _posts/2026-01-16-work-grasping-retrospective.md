@@ -1,6 +1,6 @@
 ---
 title: "Project Retrospective: Grasping in Clutter"
-date: 2026-01-16
+date: 2024-11-06
 categories: [work]
 tags: [project, manipulation, sim2real]
 ---

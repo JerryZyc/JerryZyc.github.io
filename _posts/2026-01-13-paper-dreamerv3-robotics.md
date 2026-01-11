@@ -1,6 +1,6 @@
 ---
 title: "DreamerV3 for Robotics (Example Note)"
-date: 2026-01-13
+date: 2024-11-03
 categories: [paper]
 tags: [model-based, robotics, policy]
 paper:

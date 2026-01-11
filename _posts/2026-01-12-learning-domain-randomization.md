@@ -1,6 +1,6 @@
 ---
 title: "Domain Randomization for Sim2Real"
-date: 2026-01-12
+date: 2024-11-02
 categories: [learning]
 tags: [sim2real, domain-randomization, perception]
 ---

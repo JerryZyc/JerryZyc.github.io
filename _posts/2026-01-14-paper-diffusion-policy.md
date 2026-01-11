@@ -1,6 +1,6 @@
 ---
 title: "Diffusion Policy for Manipulation (Example Note)"
-date: 2026-01-14
+date: 2024-11-04
 categories: [paper]
 tags: [diffusion, manipulation, robotics]
 paper:
