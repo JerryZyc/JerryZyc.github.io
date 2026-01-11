@@ -1,9 +1,9 @@
 ---
 layout: category
-title: "Learning Notes"
+title: "学习笔记"
 permalink: /learning-notes/
 taxonomy: learning
 entries_layout: list
 ---
 
-Learning notes organized by topic (RL, control, planning, perception, sim2real). Posts in this category appear below.
+按主题整理的学习笔记（RL、控制、规划、感知、Sim2Real）。该分类下的文章如下。

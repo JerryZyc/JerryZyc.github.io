@@ -1,5 +1,5 @@
 ---
-title: "Paper Note Template"
+title: "论文笔记模板"
 date: 2026-01-11
 categories: [paper]
 tags: [robot-learning]
@@ -13,24 +13,24 @@ status: to-read
 ---
 
 ## TL;DR
-- 3-5 lines summary.
+- 3-5 行摘要。
 
-## Problem Definition and Assumptions
+## 问题定义与假设
 
-## Method
+## 方法
 
-## Experimental Setup
+## 实验设置
 
-## Results and Ablations
+## 结果与消融
 
-## Strengths and Limitations
+## 优点与局限
 
-## Reproduction Checklist
-- Dependencies:
-- Key hyperparameters:
-- Pitfalls:
+## 复现清单
+- 依赖：
+- 关键超参数：
+- 注意事项：
 
-## How to Use This in My Projects
+## 如何用于我的项目
 
-## References
-- [1] Placeholder citation.
+## 参考文献
+- [1] 占位引用。

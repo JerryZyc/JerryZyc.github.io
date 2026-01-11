@@ -1,43 +1,43 @@
-# Contributing Guide
+# 贡献指南
 
-## File Naming
+## 文件命名
 
-- Posts must be in `_posts/` with `YYYY-MM-DD-title.md`.
-- Use lowercase and hyphens for titles.
+- 文章必须放在 `_posts/`，命名为 `YYYY-MM-DD-title.md`。
+- 标题使用小写字母与连字符。
 
-## Front Matter
+## Front Matter（头部）
 
-Required fields:
+必填字段：
 
 - `title`
 - `date`
 - `categories`
 - `tags`
 
-Paper notes must also include:
+论文笔记还需包含：
 
 - `paper.venue`
 - `paper.year`
 - `paper.authors`
 - `paper.pdf`
 - `paper.code`
-- `status` (to-read | reading | done | reproduced)
+- `status`（to-read | reading | done | reproduced）
 
-## Categories
+## 分类
 
-Use one of:
+使用以下之一：
 
 - `learning`
 - `paper`
 - `skills`
 - `work`
 
-## Images
+## 图片
 
-- Store images in `assets/images/`.
-- Reference with relative paths like `/assets/images/your-image.png`.
+- 图片放在 `assets/images/`。
+- 引用使用相对路径，如 `/assets/images/your-image.png`。
 
-## References
+## 参考文献
 
-- Use a simple list under a `## References` section.
-- Placeholders are acceptable in early drafts.
+- 在 `## 参考文献` 小节下用列表。
+- 草稿阶段可使用占位内容。

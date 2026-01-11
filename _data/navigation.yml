@@ -1,15 +1,15 @@
 main:
-  - title: "Home"
+  - title: "主页"
     url: /
-  - title: "Learning Notes"
+  - title: "学习笔记"
     url: /learning-notes/
-  - title: "Paper Notes"
+  - title: "论文笔记"
     url: /paper-notes/
-  - title: "Skills"
+  - title: "技能树"
     url: /skills/
-  - title: "Work & Projects"
+  - title: "工作与项目"
     url: /work-projects/
-  - title: "About"
+  - title: "关于"
     url: /about/
-  - title: "Search"
+  - title: "搜索"
     url: /search/

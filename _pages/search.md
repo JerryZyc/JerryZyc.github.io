@@ -1,5 +1,5 @@
 ---
 layout: search
-title: "Search"
+title: "搜索"
 permalink: /search/
 ---

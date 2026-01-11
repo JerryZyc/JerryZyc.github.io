@@ -1,9 +1,9 @@
 ---
 layout: category
-title: "Work & Projects"
+title: "工作与项目"
 permalink: /work-projects/
 taxonomy: work
 entries_layout: list
 ---
 
-Project retrospectives and work notes (context, goals, solution, results, lessons). Posts in this category appear below.
+项目复盘与工作笔记（背景、目标、方案、结果、经验）。该分类下的文章如下。

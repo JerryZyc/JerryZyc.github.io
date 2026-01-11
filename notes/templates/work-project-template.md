@@ -1,18 +1,18 @@
 ---
-title: "Work and Project Retrospective Template"
+title: "工作与项目复盘模板"
 date: 2026-01-11
 categories: [work]
 tags: [project]
 ---
 
-## Background
+## 背景
 
-## Goals
+## 目标
 
-## Approach
+## 方案
 
-## Results
+## 结果
 
-## Lessons Learned
+## 经验教训
 
-## Next Actions
+## 下一步行动

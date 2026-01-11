@@ -1,24 +1,24 @@
 ---
-title: "Writing Guide"
+title: "写作指南"
 ---
 
-# Writing Guide
+# 写作指南
 
-## Structure Overview
+## 结构概览
 
-- Learning Notes: practical learnings and checklists.
-- Paper Notes: standardized template.
-- Skills: skill map and roadmap.
-- Work & Projects: retrospective template.
+- 学习笔记：实践要点与清单。
+- 论文笔记：标准化模板。
+- 技能树：技能图谱与路线。
+- 工作与项目：复盘模板。
 
-## Templates
+## 模板
 
-Use templates in `notes/templates/` as the starting point.
+使用 `notes/templates/` 中的模板作为起点。
 
-## Math
+## 数学公式
 
-Inline: `$a^2 + b^2 = c^2$`  
-Block:
+行内：`$a^2 + b^2 = c^2$`  
+块级：
 
 ```
 $$
@@ -26,16 +26,16 @@ J(\theta) = \sum_t r_t
 $$
 ```
 
-## Code
+## 代码
 
-Use fenced code blocks:
+使用围栏代码块：
 
 ```python
 def train():
     pass
 ```
 
-## Tags and Categories
+## 标签与分类
 
-- Keep tags lowercase and specific.
-- Use one primary category per post.
+- 标签使用小写且具体。
+- 每篇文章使用一个主分类。

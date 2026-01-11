@@ -1,9 +1,9 @@
 ---
 layout: category
-title: "Paper Notes"
+title: "论文笔记"
 permalink: /paper-notes/
 taxonomy: paper
 entries_layout: list
 ---
 
-Paper notes with a fixed template (TL;DR, method, experiments, pros/cons, reproduction checklist). Posts in this category appear below.
+使用固定模板的论文笔记（TL;DR、方法、实验、优缺点、复现清单）。该分类下的文章如下。
