@@ -1,0 +1,15 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Learning Notes"
+    url: /learning-notes/
+  - title: "Paper Notes"
+    url: /paper-notes/
+  - title: "Skills"
+    url: /skills/
+  - title: "Work & Projects"
+    url: /work-projects/
+  - title: "About"
+    url: /about/
+  - title: "Search"
+    url: /search/
