@@ -1,0 +1,64 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minimal-mistakes/skins/dark";
+@import "minimal-mistakes";
+
+:root {
+  --base-gray: #252525;
+  --base-green-soft: #82babd;
+  --base-green-strong: #19191a;
+  --base-green-stronger: #293f3c;
+  --base-border: #82dfda;
+  --base-text: #e6e6e6;
+}
+
+body {
+  background-color: var(--base-gray);
+  color: var(--base-text);
+}
+
+.masthead,
+.page__footer {
+  background-color: var(--base-green-strong);
+  border-color: var(--base-border);
+}
+
+.page__content,
+.archive,
+.list__item {
+  background-color: transparent;
+}
+
+a {
+  color: var(--base-green-soft);
+}
+
+a:hover,
+a:focus {
+  color: var(--base-text);
+}
+
+code,
+pre,
+figure.highlight {
+  background-color: var(--base-green-stronger);
+  color: var(--base-text);
+  border-color: var(--base-border);
+}
+
+blockquote {
+  background-color: var(--base-green-strong);
+  border-left-color: var(--base-green-soft);
+}
+
+.pagination .current,
+.pagination a:hover {
+  background-color: var(--base-green-stronger);
+  border-color: var(--base-border);
+}
+
+.page__footer-follow .social-icons a {
+  color: var(--base-green-soft);
+}

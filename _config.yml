@@ -1,13 +1,13 @@
-title: "机器人学习笔记"
-subtitle: "机器人/机器人学习工程师笔记"
-description: "面向机器人学习的学习笔记、论文笔记、技能图谱与项目复盘。"
+title: "Jerry Zhu Home"
+subtitle: "个人主页 / 技术随笔 / 思考碰撞"
+description: "关于机器人与智能系统的学习笔记，也记录更广泛的技术随笔、读书笔记与项目复盘。"
 url: "https://jerryzyc.github.io"
 baseurl: ""
 repository: "JerryZyc/JerryZyc.github.io"
 timezone: "Asia/Shanghai"
 
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "mint"
+minimal_mistakes_skin: "dark"
 
 markdown: kramdown
 kramdown:
@@ -23,9 +23,9 @@ search: true
 mathjax: true
 
 author:
-  name: "<Your Name>"
+  name: "Jerry Zhu"
   avatar: "/assets/images/figure1.JPG"
-  bio: "机器人/机器人学习工程师。关注策略学习、仿真到现实与运动规划。"
+  bio: "机器人与智能系统方向，记录学习、实践与灵感的碰撞。"
   location: "中国"
   links:
     - label: "GitHub"
