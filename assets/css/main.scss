@@ -14,6 +14,7 @@
   --base-text: #e6e6e6;
 }
 
+html,
 body {
   background-color: var(--base-gray);
   background-image: url("/assets/images/background.jpg");
@@ -22,6 +23,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--base-text);
+}
+
+.initial-content {
+  background: transparent;
 }
 
 .masthead,
