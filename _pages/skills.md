@@ -1,6 +1,6 @@
-﻿---
+---
 layout: single
-title: "知识图谱 Knowledge Graph"
+title: "知识图谱"
 permalink: /learning/
 classes: wide
 toc: true
