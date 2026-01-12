@@ -1,5 +1,6 @@
----
+﻿---
 layout: search
-title: "搜索"
+title: "鎼滅储"
 permalink: /search/
+author_profile: true
 ---

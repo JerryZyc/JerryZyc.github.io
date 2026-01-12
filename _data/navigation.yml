@@ -3,11 +3,11 @@ main:
     url: /
   - title: "学习笔记"
     url: /learning-notes/
-  - title: "论文笔记"
+  - title: "论文阅读"
     url: /paper-notes/
-  - title: "技能树"
-    url: /skills/
-  - title: "工作与项目"
+  - title: "知识图谱"
+    url: /learning/
+  - title: "技术经验"
     url: /work-projects/
   - title: "关于"
     url: /about/
