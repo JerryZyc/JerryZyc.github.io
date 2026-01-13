@@ -1,5 +1,5 @@
 ﻿---
-title: "Spatially-Enhanced Recurrent Memory for Long-Range Mapless Navigation (Paper Reading)"
+title: "Spatially-Enhanced Recurrent Memory for Long-Range Mapless Navigation"
 date: 2026-01-12
 categories: [paper]
 tags: [navigation, reinforcement-learning, rnn, attention, sim2real]
