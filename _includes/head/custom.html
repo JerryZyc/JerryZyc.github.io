@@ -8,3 +8,126 @@
   };
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<script>
+  (() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    document.addEventListener("DOMContentLoaded", () => {
+      if (!document.body.classList.contains("layout--home")) return;
+
+      const canvas = document.createElement("canvas");
+      canvas.id = "scroll-flash-canvas";
+      document.body.appendChild(canvas);
+
+      const ctx = canvas.getContext("2d");
+      let width = 0;
+      let height = 0;
+      let dpr = 1;
+
+      const palette = [
+        { r: 140, g: 255, b: 190 },
+        { r: 80, g: 220, b: 160 },
+        { r: 120, g: 255, b: 220 }
+      ];
+
+      const particles = [];
+      const maxParticles = 160;
+
+      const resize = () => {
+        dpr = window.devicePixelRatio || 1;
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = Math.floor(width * dpr);
+        canvas.height = Math.floor(height * dpr);
+        canvas.style.width = `${width}px`;
+        canvas.style.height = `${height}px`;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      };
+
+      const addParticles = (intensity) => {
+        const count = Math.min(6 + Math.floor(intensity * 0.02), 16);
+        for (let i = 0; i < count; i += 1) {
+          if (particles.length >= maxParticles) particles.shift();
+          const size = 4 + Math.random() * 6;
+          const color = palette[Math.floor(Math.random() * palette.length)];
+          const baseOpacity = 0.55 + Math.random() * 0.45;
+          particles.push({
+            x: Math.random() * width,
+            y: -10 - Math.random() * 20,
+            vx: (Math.random() - 0.5) * 0.4,
+            vy: 0.4 + Math.random() * 2.0,
+            rot: Math.random() * Math.PI,
+            rotSpeed: (Math.random() - 0.5) * 0.08,
+            size,
+            opacity: baseOpacity,
+            opacityJitter: 0.15 + Math.random() * 0.25,
+            r: color.r,
+            g: color.g,
+            b: color.b
+          });
+        }
+      };
+
+      const drawStar = (x, y, radius, rotation) => {
+        const spikes = 5;
+        const innerRadius = radius * 0.45;
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(rotation);
+        ctx.beginPath();
+        for (let i = 0; i < spikes * 2; i += 1) {
+          const angle = (Math.PI / spikes) * i;
+          const r = i % 2 === 0 ? radius : innerRadius;
+          const px = Math.cos(angle) * r;
+          const py = Math.sin(angle) * r;
+          if (i === 0) ctx.moveTo(px, py);
+          else ctx.lineTo(px, py);
+        }
+        ctx.closePath();
+        ctx.fill();
+        ctx.restore();
+      };
+
+      let lastTime = performance.now();
+      const tick = (time) => {
+        const dt = Math.min(32, time - lastTime);
+        lastTime = time;
+        ctx.clearRect(0, 0, width, height);
+        if (particles.length) {
+          ctx.globalCompositeOperation = "lighter";
+          for (let i = particles.length - 1; i >= 0; i -= 1) {
+            const p = particles[i];
+            p.vy += 0.012 * dt;
+            p.y += p.vy * dt;
+            p.x += p.vx * dt;
+            p.rot += p.rotSpeed * dt;
+            p.opacity -= 0.0006 * dt;
+            if (p.y > height + 40 || p.opacity <= 0) {
+              particles.splice(i, 1);
+              continue;
+            }
+            const shimmer =
+              p.opacity + Math.sin(time * 0.005 + p.x) * p.opacityJitter;
+            const alpha = Math.max(0, Math.min(1, shimmer));
+            ctx.fillStyle = `rgba(${p.r}, ${p.g}, ${p.b}, ${alpha.toFixed(2)})`;
+            ctx.shadowColor = `rgba(${p.r}, ${p.g}, ${p.b}, 0.35)`;
+            ctx.shadowBlur = p.size * 2;
+            drawStar(p.x, p.y, p.size, p.rot);
+          }
+          ctx.globalCompositeOperation = "source-over";
+        }
+        requestAnimationFrame(tick);
+      };
+
+      resize();
+      window.addEventListener("resize", resize);
+      window.addEventListener(
+        "wheel",
+        (event) => {
+          addParticles(Math.abs(event.deltaY));
+        },
+        { passive: true }
+      );
+      requestAnimationFrame(tick);
+    });
+  })();
+</script>
