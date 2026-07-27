@@ -6,7 +6,7 @@ baseurl: ""
 repository: "JerryZyc/JerryZyc.github.io"
 timezone: "Asia/Shanghai"
 
-remote_theme: "mmistakes/minimal-mistakes"
+theme: "minimal-mistakes-jekyll"
 minimal_mistakes_skin: "dark"
 
 markdown: kramdown

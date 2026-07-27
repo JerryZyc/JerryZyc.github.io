@@ -3,3 +3,8 @@ _site/
 .sass-cache/
 .bundle/
 vendor/
+.opencode/chroma_db/
+.opencode/*.npy
+.opencode/*.pkl
+__pycache__/
+*.pyc
