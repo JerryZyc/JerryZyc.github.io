@@ -32,7 +32,7 @@ author:
   links:
     - label: "GitHub"
       icon: "fab fa-github"
-      url: "https://github.com/<username>"
+      url: "https://github.com/JerryZyc"
 
 plugins:
   - jekyll-feed
