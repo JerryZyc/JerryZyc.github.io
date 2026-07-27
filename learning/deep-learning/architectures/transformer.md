@@ -51,5 +51,5 @@ Return outputs
 - [ ] 数据量足够
 
 ## 个人备注
-TODO
+详见博客文章 <code>_posts/2026-07-27-learning-transformer-deep-dive.md</code>，包含完整的推导、直觉和训练要点。
 
