@@ -8,3 +8,4 @@ vendor/
 .opencode/*.pkl
 __pycache__/
 *.pyc
+assets/papers/*.pdf
